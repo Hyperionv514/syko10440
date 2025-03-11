@@ -13,9 +13,9 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
         ['Field'] = ('Box'),
         ['Mode'] = ('Automatic'), --[[ Automatic, Target ]]
                                                                                                          --[[ Must have Automated enabled to use these (prediction formula for offbrands) ]]
-        ['Prediction'] = { ['Enabled'] = (true), ['Ground'] = 0.109, ['Air'] = 0.109, ['Automated'] = (true), ['Stabilize'] = 4.9, ['YStabilize'] = { ['Enabled'] = true, ['Value'] = 2 } },
+        ['Prediction'] = { ['Enabled'] = (false), ['Ground'] = 0.109, ['Air'] = 0.109, ['Automated'] = (true), ['Stabilize'] = 4.9, ['YStabilize'] = { ['Enabled'] = true, ['Value'] = 2 } },
                                                           --[[ Basic, Advanced ]]
-        ['Point'] = ('Nearest Point'), ['Scale'] = (0.24), ['Type'] = ('Advanced'), --[[ "Nearest Part", "Nearest Point", "Default" ]]
+        ['Point'] = ('Nearest Point'), ['Scale'] = (0.18), ['Type'] = ('Advanced'), --[[ "Nearest Part", "Nearest Point", "Default" ]]
         ['Parts'] = {'Head'} --[[ https://create.roblox.com/docs/reference/engine/enums/BodyPartR15 ]]
     },
     
@@ -52,20 +52,20 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
     },
 
     ["Physics"] = {
-        ['Walking'] = { ['Enabled'] = (false), ['Toggle'] = ('V'), ['Amount'] = (5) }, 
+        ['Walking'] = { ['Enabled'] = (true), ['Toggle'] = ('X'), ['Amount'] = (6) }, 
         ['Falling'] = { ['Enabled'] = (false) }, --[[ Anti Fall ]]
-        ['Jumping'] = { ['Enabled'] = (false) }, --[[ No Jump Cooldown ]]
+        ['Jumping'] = { ['Enabled'] = (true) }, --[[ No Jump Cooldown ]]
         ['Velocity'] = { ['Always On'] = (false), ['Magnitude'] = 950 }
     },  
 
-    ['Raid Awareness'] = { ['Enabled'] = (true), ['Select'] = ('T'), ['Clear'] = ('Z'), ['Outlines'] = (false), ['Box'] = (true), ['Name'] = (true) },
+    ['Raid Awareness'] = { ['Enabled'] = (false), ['Select'] = ('T'), ['Clear'] = ('Z'), ['Outlines'] = (false), ['Box'] = (true), ['Name'] = (true) },
 
     ["Modifications"] = {   --[[ Specific To Da Hood Only (NO OFFBRANDS) ]]                                     
         ['Cooldown Reduction'] = { ['Enabled'] = (false), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.35), ['[Revolver]'] = (0.13) } },                                                                                                                                                                                       
-        ['Client Redirection'] = { ['Enabled'] = (false) }, 
-        ['Spread Reduction'] = { ['Enabled'] = (false), ['Weapon'] = { ['[Double-Barrel SG]'] = (.82), ['[TacticalShotgun]'] = (.82), ['[Shotgun]'] = (0.8), ['[Drum-Shotgun]'] = (1) }, ['Randomizer'] = { ['Enabled'] = (false), ['Value'] = math.random(0.1, 0.4) } },
+        ['Client Redirection'] = { ['Enabled'] = (true) }, 
+        ['Spread Reduction'] = { ['Enabled'] = (true), ['Weapon'] = { ['[Double-Barrel SG]'] = (.82), ['[TacticalShotgun]'] = (.82), ['[Shotgun]'] = (0.8), ['[Drum-Shotgun]'] = (1) }, ['Randomizer'] = { ['Enabled'] = (false), ['Value'] = math.random(0.1, 0.4) } },
         ['Delay Reduction'] = { ['Enabled'] = (false), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.0095), ['[Revolver]'] = (0.0055) } }, 
-        ['Double Tap'] = { ['Enabled'] = (false), ['Toggle'] = ('E'), ['Weapon'] = { ('[Silencer]'), ('[Revolver]') } }, --[[ Pistols Only ]]
+        ['Double Tap'] = { ['Enabled'] = (true), ['Toggle'] = ('C'), ['Weapon'] = { ('[Silencer]'), ('[Revolver]') } }, --[[ Pistols Only ]]
         ['Beam Color'] = { ['Enabled'] = (false), ['Color'] = (Color3.new(0.560784, 0.894117, 0.901960)) },
         --[[
             Going too low or clicking too fast with delay or cooldown reduction may spawn in fake bullets at times
@@ -89,7 +89,7 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
     ["Fields"] = {
         ['AimAssistField'] = { ['Size'] = (500) },
         ['SilentAimField'] = { ['Size'] = (100) },
-        ['SilentAimBoxField'] = { ['Visible'] = (false), ['Sync'] = (true), ['Width'] = (2.7), ['Height'] = (4.8) }
+        ['SilentAimBoxField'] = { ['Visible'] = (true), ['Sync'] = (true), ['Width'] = (2.7), ['Height'] = (4.8) }
     },
 }
 
