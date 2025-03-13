@@ -10,8 +10,8 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
     ["SilentAim"] = {
         ['Enabled'] = (true),
         ['Toggle'] = ('C'), --[[ For Target Mode ]]
-        ['Field'] = ('Box'),
-        ['Mode'] = ('Target'), --[[ Automatic, Target ]]
+        ['Field'] = ('Circle'),
+        ['Mode'] = ('Automatic'), --[[ Automatic, Target ]]
                                                                                                          --[[ Must have Automated enabled to use these (prediction formula for offbrands) ]]
         ['Prediction'] = { ['Enabled'] = true, ['Ground'] = 0.109, ['Air'] = 0.109, ['Automated'] = (true), ['Stabilize'] = 4.9, ['YStabilize'] = { ['Enabled'] = true, ['Value'] = 2 } },
                                                           --[[ Basic, Advanced ]]
@@ -58,7 +58,7 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
         ['Velocity'] = { ['Always On'] = (false), ['Magnitude'] = 150 }
     },  
 
-    ['Raid Awareness'] = { ['Enabled'] = (true), ['Select'] = ('T'), ['Clear'] = ('Z'), ['Outlines'] = (false), ['Box'] = (true), ['Name'] = (true) },
+    ['Raid Awareness'] = { ['Enabled'] = (true), ['Select'] = ('P'), ['Clear'] = ('Z'), ['Outlines'] = (false), ['Box'] = (true), ['Name'] = (true) },
 
     ["Modifications"] = {   --[[ Specific To Da Hood Only (NO OFFBRANDS) ]]                                     
         ['Cooldown Reduction'] = { ['Enabled'] = (false), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.35), ['[Revolver]'] = (0.13) } },                                                                                                                                                                                       
@@ -88,7 +88,7 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
     
     ["Fields"] = {
         ['AimAssistField'] = { ['Size'] = (500) },
-        ['SilentAimField'] = { ['Size'] = (100) },
+        ['SilentAimField'] = { ['Size'] = (500) },
         ['SilentAimBoxField'] = { ['Visible'] = (false), ['Sync'] = (true), ['Width'] = (8), ['Height'] = (8) }
     },
 }
